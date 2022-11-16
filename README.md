@@ -2,7 +2,7 @@
 
 # This module will allow you to write oracle sql command straight into your playbook.
 # the return is a list of dictionaries with the column-name as key, and the row as value.
-# This module is quite easily adaptable to mssql and mysql, as the python module are quite similar.
+# This module is quite easily adaptable to mssql and mysql, as the python modules are quite similar.
 
 # it does require the python module cx-Oracle(==8.2.1, tested). And it requires the Oracle instantclient, and libaio1 packages.
 # install example for fedora/rhel
