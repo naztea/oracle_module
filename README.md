@@ -1,4 +1,4 @@
-# oracle_module
+# Oracle module for ansible
 
 This module will allow you to write oracle sql command straight into your playbook.
 the return is a list of dictionaries with the column-name as key, and the row as value.
