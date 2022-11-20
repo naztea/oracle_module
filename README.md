@@ -14,45 +14,30 @@ curl -o oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm https://download.
 
 sudo rpm -i oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm
 
-### Example playbook
+### Example playboo
+'''
 ---
 
-\- name: "Test oracle connection"
-
+- name: "Test oracle connection"
   hosts: localhost
-  
   gather_facts: false
-  
   tasks:
-
     - name: "Execute orcl_spl module"
-    
       orcl_sql:
-      
         hostname: "<ip/hostname>:<port>"
-        
         database: "<database-name>"
-        
         username: "<username>"
-        
         password: "<password>"
-        
         queries:
-        
           - query_var: "first_query"
-          
             query: |
-            
               SELECT * FROM "table"
-              
       register: sql
 
     - name: "Show return"
-    
       ansible.builtin.debug:
-      
         var: sql
-
+'''
 
 ### Example output
 TASK [Show return] **************************************************************************************************************************************************************************************************************************
