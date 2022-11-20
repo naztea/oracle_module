@@ -22,7 +22,7 @@ sudo rpm -i oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm
   gather_facts: false
   tasks:
 
-    \- name: "Execute orcl_spl module"
+    - name: "Execute orcl_spl module"
       orcl_sql:
         hostname: "<ip/hostname>:<port>"
         database: "<database-name>"
@@ -34,7 +34,7 @@ sudo rpm -i oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm
               SELECT * FROM "table"
       register: sql
 
-    \- name: "Show return"
+    - name: "Show return"
       ansible.builtin.debug:
         var: sql
 
