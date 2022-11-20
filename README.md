@@ -15,7 +15,7 @@ curl -o oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm https://download.
 sudo rpm -i oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm
 
 ### Example playboo
-'''
+```
 ---
 
 - name: "Test oracle connection"
@@ -37,9 +37,10 @@ sudo rpm -i oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm
     - name: "Show return"
       ansible.builtin.debug:
         var: sql
-'''
+```
 
 ### Example output
+```
 TASK [Show return] **************************************************************************************************************************************************************************************************************************
 ok: [localhost] => {
     "sql": {
@@ -71,3 +72,4 @@ ok: [localhost] => {
         ]
     }
 }
+```
