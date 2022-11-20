@@ -7,8 +7,10 @@ It does require the python module cx-Oracle(==8.2.1, tested). And it requires th
 
 ### install example for fedora/rhel
 curl -o libaio-0.3.111-14.fc37.x86_64.rpm https://kojipkgs.fedoraproject.org//packages/libaio/0.3.111/14.fc37/x86_64/libaio-0.3.111-14.fc37.x86_64.rpm
+
 sudo rpm -i libaio-0.3.111-14.fc37.x86_64.rpm
 curl -o oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm
+
 sudo rpm -i oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm
 
 ### Example playbook
